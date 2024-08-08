@@ -10,6 +10,7 @@ apt install -y curl git gcc make zlib1g-dev libssl-dev liblzma-dev sqlite3
 curl https://pyenv.run | bash
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 pyenv init -
 pyenv install 3.6.15
 pyenv versions
